@@ -1,0 +1,17 @@
+{% extends 'padreIndex.html' %}
+
+{% block content2 %}
+<h2>Lista de Productos</h2>
+<a href="{% url 'index2' %}" class="btn">Volver al Inicio</a>
+
+<div class="productos-container">
+    {% for producto in productos %}
+    <div class="producto-card">
+        <img src="{{ producto.imagen_url }}" alt="{{ producto.nombre }}">
+        <h3>{{ producto.nombre }}</h3>
+        <p>{{ producto.descripcion }}</p>
+        <button class="btn">Añadir al carrito</button> 
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

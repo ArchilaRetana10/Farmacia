@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia - Gestión</title>
+    <meta name="description" content="Farmacia - Gestiona productos, clientes, reportes y más">
+    <meta name="keywords" content="farmacia, gestión, clientes, productos, reportes">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+
+<body>
+    <!-- Barra de navegación global que aparece en todas las páginas -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'acerca' %}">Acerca de</a></li>
+                <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+                <li><a href="{% url 'registro' %}">Regístrate aquí</a></p></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página -->
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Farmacia - Todos los derechos reservados</p>
+            <div class="contact-info">
+                <p><strong>Contacto:</strong></p>
+                <p>Email: contacto@farmacia.com</p>
+                <p>Teléfono: +502 4516 7089</p>
+                <p>Dirección: Calle 123, Guatemala, Guatemala</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

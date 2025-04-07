@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}  <!-- 🔹 Esto soluciona el error -->
+
+{% block content %}
+<div class="container">
+    <h1>Acerca de Nosotros</h1>
+
+    <div class="info-boxes">
+        <!-- Misión -->
+        <div class="box mission">
+            <h2>Misión</h2>
+            <img src="{% static 'img/mision.png' %}" alt="Misión">
+            <p>
+                Brindar productos farmacéuticos de calidad, garantizando el bienestar y la salud de nuestros clientes
+                mediante un servicio confiable y accesible.
+            </p>
+        </div>
+
+        <!-- Visión -->
+        <div class="box vision">
+            <h2>Visión</h2>
+            <img src="{% static 'img/vision.jpg' %}" alt="Visión">
+            <p>
+                Ser la farmacia líder en el mercado, ofreciendo un servicio excepcional y productos innovadores para la salud de nuestra comunidad.
+            </p>
+        </div>
+
+    </div>
+</div>
+<a href="/" class="btn back-btn">Volver al Inicio</a>
+
+{% endblock %}

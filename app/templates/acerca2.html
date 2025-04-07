@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Misión y Visión</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}" class="active">Inicio</a></li>
+                <li><a href="{% url 'acerca2' %}">Acerca</a></li>
+                <li>
+                    <a href="#">Mantenimientos</a>
+                    <ul>
+                        <li><a href="{% url 'clientes' %}">Clientes</a></li>
+                        <li><a href="{% url 'productos' %}">Productos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Reportes</a>
+                    <ul>
+                        <li><a href="{% url 'reporte_clientes' %}">Clientes</a></li>
+                        <li><a href="{% url 'reporte_productos' %}">Productos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Procesos</a>
+                    <ul>
+                        <li><a href="{% url 'facturacion' %}">Facturación</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Acerca de Nosotros</h1>
+
+        <!-- Contenedor de los cuadros de Misión y Visión -->
+        <div class="info-boxes">
+            <!-- Misión -->
+            <div class="box mission">
+                <h2>Misión</h2>
+                <p>Brindar productos de calidad y estilo para todas las mujeres, buscando siempre la satisfacción de nuestras clientas.</p>
+            </div>
+
+            <!-- Visión -->
+            <div class="box vision">
+                <h2>Visión</h2>
+                <p>Ser la tienda de moda femenina más reconocida, ofreciendo las últimas tendencias con un servicio excepcional.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de imágenes (si lo deseas) -->
+        <div class="image-container">
+            <div class="image-with-border">
+                <img src="{% static 'img/mision.png' %}" alt="Misión">
+            </div>
+            <div class="image-with-border">
+                <img src="{% static 'img/vision.jpg' %}" alt="Visión">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+     <div class="footer-content">
+         <p>© 2025 Farmacia - Todos los derechos reservados</p>
+         <div class="contact-info">
+             <p><strong>Contacto:</strong></p>
+             <p>Email: contacto@farmacia.com</p>
+             <p>Teléfono: +502 4516 7089</p>
+             <p>Dirección: Calle 123, Guatemala, Guatemala</p>
+         </div>
+     </div>
+    </footer>
+
+</body>
+</html>

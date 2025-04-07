@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Panel de Administración{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index2' %}" class="active">Inicio</a></li>
+                <li><a href="{% url 'acerca2' %}">Acerca</a></li>
+                <li>
+                    <a href="#">Mantenimientos</a>
+                    <ul>
+                        <li><a href="{% url 'clientes' %}">Clientes</a></li>
+                        <li><a href="{% url 'productos' %}">Productos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Reportes</a>
+                    <ul>
+                        <li><a href="{% url 'reporte_clientes' %}">Clientes</a></li>
+                        <li><a href="{% url 'reporte_productos' %}">Productos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Procesos</a>
+                    <ul>
+                        <li><a href="{% url 'facturacion' %}">Facturación</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content2 %}
+        {% endblock %}
+    </main>
+
+    <footer>
+     <div class="footer-content">
+         <p>© 2025 Farmacia - Todos los derechos reservados</p>
+         <div class="contact-info">
+             <p><strong>Contacto:</strong></p>
+             <p>Email: contacto@farmacia.com</p>
+             <p>Teléfono: +502 4516 7089</p>
+             <p>Dirección: Calle 123, Guatemala, Guatemala</p>
+         </div>
+     </div>
+ </footer>
+</body>
+</html>

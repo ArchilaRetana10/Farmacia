@@ -1,0 +1,361 @@
+/* Estilos generales para el menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #007bff; /* Color de fondo para la barra de navegación */
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white; /* Color de texto blanco */
+    display: block;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para los enlaces del menú cuando se pasa el ratón por encima */
+nav ul li a:hover {
+    background-color: #0056b3; /* Color de fondo cuando el ratón pasa por encima */
+}
+
+/* Estilo para el menú de navegación activo (opcional) */
+nav ul li a.active {
+    background-color: #003366; /* Color para el enlace activo */
+}
+/* Estilos para la sección de "Acerca de" */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los cuadros */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Contenedor de los cuadros */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo general para los cuadros */
+.box {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Imágenes dentro de los cuadros */
+.box img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    display: block; /* 🔹 Asegura que la imagen esté en su propia línea */
+    margin: 0 auto 15px auto; /* 🔹 Centra la imagen y agrega espacio debajo */
+}
+.container {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo para las imágenes dentro de los cuadros */
+.box img {
+    width: 70%; /* Ajusta este porcentaje según el tamaño que desees */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Centra la imagen y deja un espacio debajo */
+}
+
+/* Ajustes generales para las cajas */
+.box {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(16, 12, 12);
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: hsl(210, 100%, 99%); /* Fondo claro para los cuadros */
+}
+
+/* Estilo de los títulos dentro de los cuadros */
+.box h2 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Estilo específico para las clases de misión y visión */
+.mission {
+    border-top: 5px solid #007bff;
+}
+
+.vision {
+    border-top: 5px solid #28a745;
+}
+
+/* Contenedor de las imágenes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para las imágenes con borde azul */
+.image-with-border {
+    border: 5px solid #007bff !important; /* Aseguramos que el borde sea visible */
+    border-radius: 10px;
+    padding: 10px; /* Aumentamos el padding para que el borde sea más visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    background-color: white; /* Aseguramos que el fondo de la imagen sea blanco */
+}
+
+/* Estilo para el contenedor de bienvenida */
+.welcome-container {
+    background-color: #fafafa; /* Fondo azul */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Estilo para el mensaje de bienvenida */
+.welcome-message h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #cadcff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor para el contenido del pie de página */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Información de contacto */
+.contact-info {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilo para los elementos de contacto */
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilos generales para la página de inicio de sesión */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor del formulario */
+.login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+.login-form h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los grupos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de ingreso */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Enlace de registro */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+/* Botón de Volver al Inicio */
+.back-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+}
+
+.back-btn:hover {
+    background-color: #007bff;
+    color: #007bff;
+}
+
+/* Estilo básico para la barra de navegación */
+.navbar-section {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-section nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-section nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-section nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Estilo para los submenús (ocultos por defecto) */
+.navbar-section nav ul li .submenu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-section nav ul li .submenu-list li {
+    display: block;
+}
+
+.navbar-section nav ul li:hover .submenu-list {
+    display: block;
+}
+
+.navbar-section nav ul li a:hover {
+    background-color: #555;
+}
+
+.navbar-section nav ul li .submenu-list li a {
+    padding: 10px 15px;
+}
+
+.navbar-section nav ul li .submenu-list li a:hover {
+    background-color: #666;
+}

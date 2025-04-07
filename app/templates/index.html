@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="welcome-container">
+        <div class="welcome-message">
+            <h1>¡Bienvenido a nuestra Farmacia!</h1>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="{% static 'img/imagen1.png' %}" alt="Imagen 1" class="image-with-border">
+        <img src="{% static 'img/imagen2.png' %}" alt="Imagen 2" class="image-with-border">
+        <img src="{% static 'img/imagen3.png' %}" alt="Imagen 2" class="image-with-border">
+        <img src="{% static 'img/imagen4.png' %}" alt="Imagen 2" class="image-with-border">
+
+
+    </div>
+    
+
+{% endblock %}

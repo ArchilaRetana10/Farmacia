@@ -1,0 +1,23 @@
+{% extends 'padreIndex.html' %}
+{% load static %}
+
+
+{% block title %}Bienvenidos a Nuestra Farmacia{% endblock %}
+
+{% block content2 %}
+    <div class="welcome-container">
+     <div class="welcome-message">
+         <h1>¡Bienvenido a nuestra Farmacia!</h1>
+         <h1>SUPER ADMIN</h1>
+
+     </div>
+    </div>
+
+    <div class="image-container">
+     <img src="{% static 'img/imagen1.png' %}" alt="Imagen 1" class="image-with-border">
+     <img src="{% static 'img/imagen2.png' %}" alt="Imagen 2" class="image-with-border">
+     <img src="{% static 'img/imagen3.png' %}" alt="Imagen 2" class="image-with-border">
+     <img src="{% static 'img/imagen4.png' %}" alt="Imagen 2" class="image-with-border">
+    </div>
+
+{% endblock %}

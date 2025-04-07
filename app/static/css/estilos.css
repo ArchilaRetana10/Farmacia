@@ -1,0 +1,274 @@
+/* Estilos generales para el menú */
+nav ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ background-color: #007bff; /* Color de fondo para la barra de navegación */
+ justify-content: center;
+}
+
+nav ul li {
+ position: relative;
+}
+
+nav ul li a {
+ padding: 15px 25px;
+ text-decoration: none;
+ color: white; /* Color de texto blanco */
+ display: block;
+ font-size: 1.1rem;
+ transition: background-color 0.3s ease;
+}
+
+/* Estilo para los enlaces del menú cuando se pasa el ratón por encima */
+nav ul li a:hover {
+ background-color: #0056b3; /* Color de fondo cuando el ratón pasa por encima */
+}
+
+/* Estilo para el menú de navegación activo */
+nav ul li a.active {
+ background-color: #003366; /* Color para el enlace activo */
+}
+
+/* Estilos para los submenús */
+nav ul li ul {
+ display: none; /* Ocultar submenú por defecto */
+ position: absolute;
+ background-color: #0056b3;
+ top: 100%;
+ left: 0;
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ min-width: 200px; /* Establecer un ancho mínimo para el submenú */
+}
+
+nav ul li:hover > ul {
+ display: block; /* Mostrar el submenú cuando se pasa el ratón sobre el item */
+}
+
+/* Estilos para los enlaces dentro de los submenús */
+nav ul li ul li a {
+ padding: 10px 15px;
+ font-size: 1rem;
+ color: white;
+ text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+ background-color: #003366; /* Color de fondo al pasar el ratón en el submenú */
+}
+
+/* Estilos para la sección de "Acerca de" */
+footer {
+ background-color: #cadcff;
+ color: rgb(0, 0, 0);
+ padding: 20px;
+ text-align: center;
+}
+
+/* Contenedor para el contenido del pie de página */
+.footer-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+/* Información de contacto */
+.contact-info {
+ margin-top: 10px;
+ font-size: 16px;
+}
+
+/* Estilo para los elementos de contacto */
+.contact-info p {
+ margin: 5px 0;
+}
+
+/* Estilo para el contenedor de bienvenida */
+.welcome-container {
+ text-align: center;
+ margin: 50px 0;
+}
+
+.welcome-message h1 {
+ font-size: 2.5rem;
+ color: #333;
+}
+
+/* Estilo para las imágenes */
+.image-container {
+ display: flex;
+ justify-content: center;
+ gap: 20px; /* Espacio entre las imágenes */
+ margin-top: 30px;
+}
+
+.image-with-border {
+ border: 5px solid #007bff;
+ padding: 10px;
+ width: 150px; /* Puedes ajustar el tamaño de las imágenes */
+ height: 150px;
+ overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+}
+
+/* Agregar algún espacio en los márgenes de las imágenes */
+.image-container img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover; /* Ajusta las imágenes para que cubran el área del contenedor sin deformarse */
+ transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+ transform: scale(1.1); /* Efecto hover para que las imágenes crezcan un poco al pasar el ratón */
+}
+
+/* Estilo general para los cuadros de misión y visión */
+.container {
+ width: 80%;
+ margin: 50px auto;
+ text-align: center;
+}
+
+/* Contenedor para los cuadros de misión y visión */
+.info-boxes {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+}
+
+/* Estilo común para las cajas de misión y visión */
+.box {
+ width: 40%;
+ padding: 20px;
+ border-radius: 10px;
+ color: rgb(16, 12, 12);
+ font-size: 18px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ text-align: center;
+ background-color: hsl(210, 100%, 99%);
+ position: relative;
+}
+
+/* Imágenes dentro de los cuadros */
+.box img {
+ width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+ height: 200px; /* Establece una altura fija para la imagen */
+ object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin deformarse */
+ border-radius: 8px; /* Opcional: bordes redondeados para la imagen */
+ margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo específico para las clases de misión y visión */
+.mission {
+ border-top: 5px solid #007bff;
+ background-color: #f0f8ff; /* Fondo azul claro */
+}
+
+.vision {
+ border-top: 5px solid #28a745;
+ background-color: #eaf8e2; /* Fondo verde claro */
+}
+
+/* Estilo de los títulos dentro de los cuadros */
+.box h2 {
+ color: #0056b3;
+ margin-bottom: 10px;
+}
+
+/* Ajuste de texto */
+.box p {
+ color: #333;
+ font-size: 16px;
+ line-height: 1.6;
+}
+
+.image-container {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ padding: 20px;
+}
+
+/* ---------- Estilo para el formulario de registro ---------- */
+.login-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 60px 20px;
+ background-color: #f0f8ff;
+}
+
+.login-form {
+ background-color: white;
+ padding: 40px 30px;
+ border-radius: 15px;
+ box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+ max-width: 450px;
+ width: 100%;
+}
+
+.login-form h2 {
+ text-align: center;
+ margin-bottom: 30px;
+ color: #003366;
+ font-size: 28px;
+}
+
+.input-group {
+ margin-bottom: 20px;
+}
+
+.input-group label {
+ display: block;
+ font-weight: bold;
+ color: #0056b3;
+ margin-bottom: 8px;
+}
+
+.input-group input {
+ width: 100%;
+ padding: 10px;
+ border: 2px solid #007bff;
+ border-radius: 8px;
+ font-size: 16px;
+ outline: none;
+ transition: 0.3s border-color;
+}
+
+.input-group input:focus {
+ border-color: #0056b3;
+}
+
+.primary-btn {
+ width: 100%;
+ padding: 12px;
+ background-color: #007bff;
+ color: white;
+ font-size: 16px;
+ border: none;
+ border-radius: 10px;
+ cursor: pointer;
+ margin-top: 10px;
+ transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+ background-color: #0056b3;
+}
+
+.back-btn {
+ display: block;
+ text-align: center;
+ margin-top: 20px;
+ color: #007bff;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.back-btn:hover {
+ color: #0056b3;
+}
+ 

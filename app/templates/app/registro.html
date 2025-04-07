@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="login-container">
+    <div class="login-form">
+        <h2>Registro de usuario</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="input-group">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+            <button type="submit" class="primary-btn">Registrarse</button>
+        </form>
+        <a href="{% url 'login' %}" class="back-btn">¿Ya tienes cuenta? Inicia sesión</a>
+    </div>
+</div>
+{% endblock %}
