@@ -14,4 +14,19 @@
 
 🛠️ Instalación y Configuración
   Clonar el repositorio:
-  
+    git clone https://github.com/ArchilaRetana10/Farmacia.git
+    cd Farmacia
+    python -m venv venv
+
+  # En Windows (Git Bash):
+  source venv/Scripts/activate
+  # En Windows (CMD):
+  venv\Scripts\activate
+
+  pip install django
+
+python manage.py makemigrations app
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
